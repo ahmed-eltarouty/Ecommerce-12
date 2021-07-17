@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@-webkit-keyframes text-animation {
+  0% {
+    -webkit-transform: translateX(-400%);
+            transform: translateX(-400%);
+  }
+  25% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  50% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+  50% {
+    -webkit-transform: translateX(-400%);
+            transform: translateX(-400%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes text-animation {
+  0% {
+    -webkit-transform: translateX(-400%);
+            transform: translateX(-400%);
+  }
+  25% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  50% {
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+  50% {
+    -webkit-transform: translateX(-400%);
+            transform: translateX(-400%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes text-animation2 {
+  0% {
+    -webkit-transform: translateY(-400%);
+            transform: translateY(-400%);
+  }
+  25% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  50% {
+    -webkit-transform: translateY(-300%);
+            transform: translateY(-300%);
+  }
+  50% {
+    -webkit-transform: translateY(-400%);
+            transform: translateY(-400%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes text-animation2 {
+  0% {
+    -webkit-transform: translateY(-400%);
+            transform: translateY(-400%);
+  }
+  25% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  50% {
+    -webkit-transform: translateY(-300%);
+            transform: translateY(-300%);
+  }
+  50% {
+    -webkit-transform: translateY(-400%);
+            transform: translateY(-400%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  -webkit-filter: invert(1) grayscale(100);
+          filter: invert(1) grayscale(100);
+  border: 1px solid #2e2e2e;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.carousel-control-next-icon:hover,
+.carousel-control-prev-icon:hover {
+  -webkit-filter: invert(0);
+          filter: invert(0);
+  background-color: #f27003;
+  border: 1px solid #ddd;
+}
+
+.header-container {
+  position: relative;
+}
+
+.header-container .carousel-indicators {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-left: 5%;
+}
+
+.header-container .carousel-indicators button {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.header-container .carousel-indicators button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #000;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.header-container .carousel-indicators .active {
+  border-color: #000;
+}
+
+.header-container .cus-nav {
+  position: absolute;
+  width: 100%;
+  top: 2rem;
+}
+
+.header-container .cus-nav .container-fluid {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container .cus-nav .container-fluid .navbar-brand {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.header-container .cus-nav .container-fluid .nav-icons {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container .cus-nav .container-fluid .nav-icons ul {
+  margin: 0;
+}
+
+.header-container .cus-nav .container-fluid .nav-icons ul li a {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  color: #252525;
+}
+
+.header-container .cus-nav .container-fluid .nav-icons ul li a:hover {
+  color: #f27003;
+}
+
+.header-container .cus-nav .container-fluid .navbar-nav > li {
+  margin-right: 2rem;
+}
+
+.header-container .cus-nav .container-fluid .navbar-nav > li a {
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.header-container .cus-nav .container-fluid .navbar-nav > li :hover,
+.header-container .cus-nav .container-fluid .navbar-nav > li li:hover a {
+  color: #f27003;
+  border-color: #f27003;
+}
+
+.header-container .cus-nav .container-fluid .dropdown:hover .dropdown-menu {
+  display: block !important;
+}
+
+.header-container .carousel-caption {
+  top: 25%;
+  left: 0%;
+  right: 40%;
+}
+
+.header-container .carousel-caption h3 {
+  font-size: 3rem;
+  -webkit-animation: text-animation2 1s;
+          animation: text-animation2 1s;
+}
+
+.header-container .carousel-caption .btn-carousel {
+  position: relative;
+  padding: 1rem 2rem;
+  background-color: #f27003;
+  color: #fff;
+  margin-top: 2rem;
+  -webkit-transition: 3s ease-in-out;
+  transition: 3s ease-in-out;
+  -webkit-animation: text-animation 1s;
+          animation: text-animation 1s;
+}
+
+.header-container .carousel-control-prev,
+.header-container .carousel-control-next {
+  width: 5%;
+}
+/*# sourceMappingURL=main.css.map */
